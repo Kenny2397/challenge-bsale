@@ -7,21 +7,21 @@ const categoriesRouter = require('./categories.router');
 const routerApi = app => {
     const router = express.Router();
 
-    app.use('', (req, res ) => {
-        res.send(`
-        <h1>Bsale test api</h1>
+    // app.use('', (req, res ) => {
+    //     res.send(`
+    //     <h1>Bsale test api</h1>
 
-        <p>message: Bsale test api is running</p>
-        <p>version: 1.0.0</p>
-        <p>author: Kenny Luque</p>
-        <p>email:kenny.luque.t@uni.pe </p>
-        <div>
+    //     <p>message: Bsale test api is running</p>
+    //     <p>version: 1.0.0</p>
+    //     <p>author: Kenny Luque</p>
+    //     <p>email:kenny.luque.t@uni.pe </p>
+    //     <div>
 
-        </div>
+    //     </div>
 
-        `);
+    //     `);
         
-    }, router);
+    // }, router);
 
     app.use('/api/v1', router);
 

@@ -9,7 +9,7 @@ const routerApi = require('./routes');
 const app = express();
 
 //cors middleware
-const whiteList = ['http://127.0.0.1:5500'];
+const whiteList = ['http://127.0.0.1:5500','https://dulcet-hotteok-2a1acc'];
 app.use(
     cors({
         origin: function(origin, callback) {

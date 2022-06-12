@@ -8,12 +8,16 @@ const routerApi = app => {
     const router = express.Router();
 
     app.use('/', (req, res ) => {
-        res.send('<h1>Bsale test api</h1>');
-        res.json({
-            message: 'Bsale test api',
-            status: 'ok',
-            version: '1.0.0',
-        })
+        res.send(`
+        <h1>Bsale test api</h1>
+
+        <p>message: Bsale test api is running</p>
+        <p>version: 1.0.0</p>
+        <p>author: Kenny Luque</p>
+        <p>email:kenny.luque.t@uni.pe </p>
+
+        `);
+        
     })
 
     app.use('/api/v1', router);

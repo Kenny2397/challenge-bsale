@@ -7,7 +7,7 @@ const categoriesRouter = require('./categories.router');
 const routerApi = app => {
     const router = express.Router();
 
-    app.use('/', (req, res ) => {
+    app.use('', (req, res ) => {
         res.send(`
         <h1>Bsale test api</h1>
 
@@ -15,10 +15,13 @@ const routerApi = app => {
         <p>version: 1.0.0</p>
         <p>author: Kenny Luque</p>
         <p>email:kenny.luque.t@uni.pe </p>
+        <div>
+
+        </div>
 
         `);
         
-    })
+    }, router);
 
     app.use('/api/v1', router);
 
